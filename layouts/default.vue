@@ -22,10 +22,8 @@ export default {
 
 <style scoped>
 body {
-  border: 10px solid #ccc;
   min-height: 100vh;
-  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI",
-    Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: 'Nunito', sans-serif;
   font-size: 16px;
   line-height: 1.4;
   word-spacing: 1px;
@@ -34,6 +32,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
+  padding-top: 70px;
 }
 
 *,

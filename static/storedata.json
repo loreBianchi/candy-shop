@@ -4,33 +4,33 @@
     "color": "Goldenrod",
     "description": "Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci. Mauris lacinia sapien quis libero.",
     "gender": "Male",
-    "name": "Desi Avramovitz",
+    "name": "Atomic Clock",
     "review": "productize virtual markets",
     "starrating": 3,
     "price": 50.4,
-    "img": "1.jpg"
+    "img": "atomic-clock-red-small.jpg"
   },
   {
     "id": "bfa86b1c-9ebf-4555-987f-7b8bf7d27be7",
     "color": "Puce",
     "description": "Phasellus in felis. Donec semper sapien a libero. Nam dui.",
     "gender": "Male",
-    "name": "Addy Alldre",
+    "name": "Grand tour",
     "review": "deploy efficient mindshare",
     "starrating": 4,
     "price": 33.99,
-    "img": "2.jpg"
+    "img": "grand_tour-small.jpg"
   },
   {
     "id": "eca6b1c7-6b8c-4416-aae0-98cecdc18e92",
     "color": "Orange",
     "description": "Curabitur in libero ut massa volutpat convallis. Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo. Maecenas pulvinar lobortis est.",
     "gender": "Female",
-    "name": "Bernie Gledhill",
+    "name": "Jupiter small",
     "review": "mesh sticky content",
     "starrating": 3,
     "price": 102.99,
-    "img": "3.jpg"
+    "img": "jupiter-small.jpg"
   },
   {
     "id": "440e2eac-67ed-4407-993a-d9f6b7f15087",

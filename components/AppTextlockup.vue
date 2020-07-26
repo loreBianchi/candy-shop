@@ -1,21 +1,10 @@
 <template>
   <div class="textlockup">
-    <div class="img">
-      <slot name="img">
-        <img src="/shoe1.jpg" alt="shoe" />
-      </slot>
-    </div>
-    <div class="new">
-      <slot name="new">New</slot>
-    </div>
-    <div class="sale">
-      <slot name="sale">Men Shoes</slot>
-    </div>
-    <div class="collection">
-      <slot name="collection">Collection</slot>
-    </div>
-    <div class="details">
-      <slot name="details">Street Style New Fashion</slot>
+    <div class="grid-container">
+      <div class="main-offer"></div>
+      <div class="second-offer"></div>
+      <div class="third-offer"></div>
+      <div class="fouth-offer"></div>
     </div>
   </div>
 </template>
@@ -25,50 +14,47 @@ export default {};
 </script>
 
 <style lang="scss" scoped>
+@import "../assets/variables";
+
 .textlockup {
+  height: 80vh;
+  width: 100%;
+}
+.grid-container {
+  height: 100%;
+  width: 100%;
   display: grid;
-  grid-template-columns: 50px 100px 1fr;
-  grid-template-rows: 50px 50px 100px 20px 1fr;
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
-  .new {
-    grid-area: 1 / 1 / 5 / 4;
-    font-size: 23vmin;
-    color: #efefef;
-    text-transform: uppercase;
-  }
-  .sale {
-    grid-area: 2 / 2 / 3 / 4;
-    font-size: 6.5vmin;
-    color: #d96528;
-    font-family: "PT Serif", -apple-system, BlinkMacSystemFont, "Segoe UI",
-      Roboto, "Helvetica Neue", Arial, sans-serif;
-  }
-  .collection {
-    grid-area: 3 / 3 / 4 / 4;
-    font-size: 8.5vmin;
-    font-family: "PT Serif", -apple-system, BlinkMacSystemFont, "Segoe UI",
-      Roboto, "Helvetica Neue", Arial, sans-serif;
-  }
-  .details {
-    grid-area: 4 / 2 / 5 / 4;
-    font-size: 2vmin;
-    letter-spacing: 0.2em;
-    text-transform: uppercase;
-  }
-  .img {
-    max-width: 950px;
-    grid-area: 1 / 3 / 6 / 4;
-    img {
-      width: 95%;
-    }
-  }
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 0.9fr 1.1fr;
+  gap: 1px 1px;
+  grid-template-areas: "main-offer main-offer main-offer main-offer second-offer second-offer" "main-offer main-offer main-offer main-offer third-offer third-offer" "fouth-offer fouth-offer fouth-offer fouth-offer fouth-offer fouth-offer";
 }
 
-@media screen and (max-width: 650px) {
-  .textlockup {
-    grid-template-columns: 25px 25px 1fr !important;
-    grid-template-rows: 6vmin 5.5vmin 10vmin 20px 1fr !important;
-  }
+.main-offer { 
+  grid-area: main-offer;
+  background: lightgrey;
+}
+
+.second-offer { 
+  grid-area: second-offer;
+  background: lightgoldenrodyellow;
+}
+
+.third-offer { grid-area: third-offer; }
+
+.fouth-offer { grid-area: fouth-offer; }
+
+/* For presentation only, no need to copy the code below */
+.grid-container * { 
+  border: 1px solid $brand-primary;
+  position: relative;
+  padding: 16px;
+}
+
+.grid-container *:after { 
+  content:attr(class);
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 </style>

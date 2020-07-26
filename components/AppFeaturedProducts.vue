@@ -27,6 +27,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "../assets/variables";
+
 section {
   margin-top: 60px;
 }
@@ -37,8 +39,8 @@ section {
   .item {
     border: 1px solid #eee2dc;
     box-shadow: 0 3px 10px 0px #eee;
-    border-radius: 40px;
-    padding: 10px 20px 30px;
+    border-radius: $border-radius;
+    padding: 20px 30px;
     min-height: 150px;
     justify-self: center;
     align-self: center;

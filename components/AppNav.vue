@@ -1,6 +1,6 @@
 <template>
   <header>
-    <h1>Skyline Ivy</h1>
+    <h1>Candy Shop 🍬</h1>
     <nav>
       <ul>
         <li>
@@ -10,7 +10,7 @@
           <nuxt-link to="/all">All</nuxt-link>
         </li>
         <li>
-          <nuxt-link to="/women">Women</nuxt-link>
+          <nuxt-link to="/prints">Prints</nuxt-link>
         </li>
         <li>
           <nuxt-link to="/men">Men</nuxt-link>
@@ -36,21 +36,29 @@ export default {
 
 <style lang="scss" scoped>
 header {
-  display: flex;
+  display: inline-flex;
   justify-content: center;
-  flex-direction: column;
   align-items: center;
-  padding: 40px 40px 0;
+  width: 100%;
+  background-color: aquamarine;
+  padding-left: 10px;
+  position: fixed;
+  top: 0;
+  z-index: 3;
+  h1 {
+    font-family: 'Bangers', cursive;
+    color: darkslategrey;
+    margin: 0;
+    flex: 1;
+    font-size: 20px;
+  }
 }
 
 nav {
   display: flex;
-  width: 80vw;
-  margin-top: 30px;
+  flex: 3;
   justify-content: center;
   align-items: center;
-  border-top: 1px solid #ccc;
-  border-bottom: 1px solid #ccc;
   padding: 8px 0;
   ul {
     padding-left: 0;
@@ -60,8 +68,6 @@ nav {
       letter-spacing: 0.1em;
       font-size: 13px;
       padding: 0 20px;
-      border-left: 1px solid #ddd;
-      border-right: 1px solid #ddd;
       position: relative;
       a {
         color: black;

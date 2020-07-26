@@ -29,6 +29,10 @@ export default {
         rel: 'stylesheet',
         href:
           'https://fonts.googleapis.com/css?family=Montserrat:300,600|PT+Serif&display=swap'
+      },
+      {
+        rel: 'stylesheet',
+        href: 'https://fonts.googleapis.com/css2?family=Bangers&family=Nunito:wght@200&display=swap'
       }
     ]
   },

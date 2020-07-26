@@ -1,6 +1,6 @@
 <template>
   <div>
-    <app-store-grid :data="women" />
+    <app-store-grid :data="prints" />
   </div>
 </template>
 
@@ -13,7 +13,7 @@ export default {
     AppStoreGrid
   },
   computed: {
-    ...mapGetters(["women"])
+    ...mapGetters(["prints"])
   }
 };
 </script>
