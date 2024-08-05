@@ -16,7 +16,7 @@
     "gsap": "^3.6.0",
     "node-sass": "^4.13.1",
     "normalize.css": "^8.0.1",
-    "nuxt": "^2.0.0",
+    "nuxt": "^3.12.4",
     "sass-loader": "^7.1.0",
     "stripe": "^7.4.0",
     "uuid": "^3.3.2",
